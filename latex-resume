@@ -1,0 +1,160 @@
+\documentclass[letterpaper,8.5pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+% ----------FONT OPTIONS----------
+\usepackage[sfdefault]{FiraSans}
+\usepackage[T1]{fontenc}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Ultra-tight margins for maximum space
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.65in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-0.95in}
+\addtolength{\textheight}{1.9in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Extremely compact sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+\pdfgentounicode=1
+%-------------------------
+% Ultra-compact custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.10in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Nischay Kumar} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 9108558715 ~ \href{mailto:nischayk3@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{nischayk3@gmail.com}} ~ 
+    \href{https://linkedin.com/in/nischay-kumar-576344174}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/nischay-kumar-576344174}} ~
+    \faMapMarker\ Bengaluru, Karnataka, India
+    \vspace{-7pt}
+\end{center}
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\small{Senior software Engineer with 6+ years of full-stack expertise specializing in production-grade React applications for Conversational AI and FinTech trading platforms. Proven track record architecting responsive, real-time frontend systems handling 10K+ concurrent users. Expert in building dynamic AI-powered trading dashboards, voice-first chat interfaces, and \textbf{generative} UI systems.}
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.10in, label={}]
+    \small{\item{
+     \textbf{AI/ML Technologies}{: Voice AI, Conversational AI, Large Language Models (LLMs), Speech-to-Text (STT), Text-to-Speech (TTS), Natural Language Processing (NLP), Multi-Agent Systems, Prompt Engineering} \\
+     \textbf{Programming Languages}{: Python, JavaScript (ES6+), TypeScript, React, Node.js, Redux} \\
+     \textbf{Voice Technologies}{: Pipecat, Real-time Speech Processing, Deepgram, ElevenLabs, Audio Processing Pipelines} \\
+     \textbf{Web Technologies}{: FastAPI, WebSockets, REST APIs, GraphQL, Web Workers, Microservices Architecture,HTML,CSS,TypeScript} \\
+     \textbf{Infrastructure \& Cloud}{: Amazon Web Services (Lambda, S3), Docker, Kubernetes, Redis, MongoDB, PostgreSQL} \\
+     \textbf{Development Tools}{: Git, Jest, Cypress, Tesseract OCR, CI/CD Pipelines}
+    }}
+ \end{itemize}
+ \vspace{-12pt}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Senior Software Engineer(SDE-III)}{Present}
+      {Think41}{Bengaluru, Karnataka}
+      \resumeItemListStart
+        \resumeItem{Led development of Experience Center a voice-first \textbf {AI platform}   using \textbf{FastAPI-based voice pipeline orchestration} and \textbf{React frontend architecture}, achieving \textbf{60\% engagement boost} and \textbf{99.9\% uptime} across 10K+ user sessions}
+        \resumeItem{Architected real-time voice AI systems with \textbf{Python backend} integrating Pipecat, STT, LLM, and TTS components with \textbf{UI dashboard} for voice interaction management}
+        \resumeItem{Developed dynamic generative UI system using \textbf{AI for personalized adaptive interfaces } , resulting in \textbf{40\% improvement} in user experience metrics}
+        \resumeItem{Built \textbf{ AI service }integration layer in \textbf{Python} connecting Deepgram, ElevenLabs, and OpenAI APIs with \textbf{React,HTML,CSS Typescript} monitoring and control interfaces}
+        \resumeItem{Mentored team of \textbf{5+ engineers} in Python AI development and React frontend optimization, achieving \textbf{65\% latency reduction} through performance tuning}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Senior Software Developer}{May 2023 -- Feb 2025}
+      {5paisa Capital Limited}{Mumbai, Maharashtra}
+      \resumeItemListStart
+        \resumeItem{Designed AI-powered chatbot using \textbf{Python NLP libraries} and \textbf{React chat interface}, reducing customer support response time by \textbf{50\%} and handling \textbf{80\%} of queries autonomously}
+        \resumeItem{Built comprehensive AI market sentiment analysis engine using \textbf{Python ML models} with OpenAI APIs and \textbf{React trading dashboards} for real-time insights visualization}
+        \resumeItem{Enhanced WebSocket infrastructure using \textbf{Python backend services} and \textbf{React microfrontend architecture} for real-time market data, achieving \textbf{zero disconnection issues}}
+        \resumeItem{Developed AI-driven document processing system using \textbf{Python-based Tesseract OCR} with \textbf{React file upload interface}, improving processing speed by \textbf{40\%}}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Software Developer}{Oct 2020 -- May 2023}
+      {Relevance Lab Private Limited}{Bengaluru, Karnataka}
+      \resumeItemListStart
+        \resumeItem{Improved application performance by \textbf{50\%} through \textbf{Python data processing pipelines} and optimized \textbf{React.js component architecture} with efficient data handling mechanisms}
+        \resumeItem{Built comprehensive simulation tools using \textbf{Python APIs} and developed customizable \textbf{React-based analytics dashboards} with AI-powered insights, increasing user flexibility by \textbf{15\%}}
+        \resumeItem{Developed scalable web applications using \textbf{React.js, Redux,HTML,CSS ,TypeScript} with \textbf{Python backend services}, AWS integration, and robust REST API implementations}
+        \resumeItem{Implemented comprehensive testing strategies using \textbf{Python unit tests} and \textbf{React component testing} with Cypress for end-to-end validation}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+%-----------KEY PROJECTS-----------
+\section{Key Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Think41 Experience Center} $|$ \emph{Python, React, Voice AI, Pipecat}}{2024}
+          \resumeItemListStart
+            \resumeItem{Production-grade voice agent infrastructure using \textbf{Python orchestration} and \textbf{UI dashboard}, achieving \textbf{99.9\% uptime} and \textbf{10K+ concurrent sessions}}
+            \resumeItem{Implemented advanced \textbf{Python-based voice processing pipeline} with \textbf{React monitoring interface} achieving \textbf{sub-500ms latency} for enterprise AI experiences}
+          \resumeItemListEnd
+          \vspace{-9pt}
+      \resumeProjectHeading
+          {\textbf{Generative UI System} $|$ \emph{Python, React, AI, Real-time Personalization}}{2024}
+          \resumeItemListStart
+            \resumeItem{Dynamic UI generation system using \textbf{Python AI models} and \textbf{React component library with HTML,CSS, TypeScript} for personalized experiences, resulting in \textbf{40\% engagement improvement}}
+          \resumeItemListEnd
+          \vspace{-9pt}
+      \resumeProjectHeading
+          {\textbf{5paisa AI Analytics Platform} $|$ \emph{Python, React, NLP, OpenAI APIs}}{2023}
+          \resumeItemListStart
+            \resumeItem{Comprehensive AI-powered trading platform using \textbf{Python ML backend} and \textbf{React dashboard frontend} with live sentiment analysis, reducing support time by \textbf{50\%}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-8pt}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Engineering in Computer Science}{2016 -- 2020}
+      {SJCIT (Visvesvaraya Technological University)}{Bangalore, Karnataka}
+  \resumeSubHeadingListEnd
+\vspace{20pt}
+\end{document}
