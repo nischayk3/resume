@@ -1,0 +1,158 @@
+\documentclass[letterpaper,8.5pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+% ----------FONT OPTIONS----------
+\usepackage[sfdefault]{FiraSans}
+\usepackage[T1]{fontenc}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Ultra-tight margins for maximum space
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.65in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-0.95in}
+\addtolength{\textheight}{1.9in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Extremely compact sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+\pdfgentounicode=1
+%-------------------------
+% Ultra-compact custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.10in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Nischay Kumar} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 9108558715 ~ \href{mailto:nischayk3@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{nischayk3@gmail.com}} ~
+    \href{https://linkedin.com/in/nischay-kumar-576344174}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/nischay-kumar-576344174}} ~
+    \faMapMarker\ Bengaluru, Karnataka, India
+    \vspace{-7pt}
+\end{center}
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\small{Lead Full-Stack AI Engineer with 6+ years building production-grade AI systems across cybersecurity automation, conversational/voice AI, and FinTech. Specialize in \textbf{LLM orchestration} and \textbf{multi-agent pipelines} --- from AI-driven SOC incident pre-triage on Azure Logic Apps and Microsoft Sentinel, to real-time voice platforms serving 10K+ concurrent users --- backed by deep React/Python full-stack delivery. Proven at turning ambiguous problems into reliable, cost-efficient AI products and leading engineers to ship them to production.}
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.10in, label={}]
+    \small{\item{
+     \textbf{AI/ML \& LLM}{: LLM Orchestration, Multi-Agent \& Agentic Workflows, Multi-Model Pipelines (Gemini Pro/Flash, GPT-4.1, OpenAI), Prompt Engineering, RAG, NLP, Conversational \& Voice AI (STT/TTS)} \\
+     \textbf{AI Security \& Automation}{: Azure Logic Apps, Microsoft Sentinel (SIEM/SOAR), Security Playbook Engineering, IOC \& Entity Enrichment, Threat Intelligence (VirusTotal, APIVoid, MISP), KQL} \\
+     \textbf{Languages}{: Python, JavaScript (ES6+), TypeScript, Node.js} \\
+     \textbf{Frontend}{: React, Redux, HTML, CSS, Generative UI, WebSockets} \\
+     \textbf{Backend \& Data}{: FastAPI, REST APIs, GraphQL, Microservices, BigQuery, SQL/PostgreSQL, Redis, MongoDB} \\
+     \textbf{Cloud \& DevOps}{: Azure, AWS (Lambda, S3), Docker, Kubernetes, CI/CD, Git, Jest, Cypress}
+    }}
+ \end{itemize}
+ \vspace{-12pt}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lead Full-Stack AI Engineer}{Mar 2026 -- Present}
+      {Cyderes (Managed Security Services Provider --- Top-20 Global MSSP)}{Remote, India}
+      \resumeItemListStart
+        \resumeItem{Architected and shipped an \textbf{AI-powered incident pre-triage system} on \textbf{Azure Logic Apps} that autonomously analyzes \textbf{Microsoft Sentinel} security incidents end to end, orchestrating a \textbf{multi-model LLM pipeline} (Gemini Pro/Flash) to generate analyst checklists, case summaries, and entity-history context --- accelerating SOC triage across thousands of incidents for enterprise clients}
+        \resumeItem{Engineered a deterministic data-normalization pipeline (flatten, filter, rename, deduplicate, and string-interning lexicon) that compresses noisy multi-vendor security telemetry before LLM inference, \textbf{cutting token cost and latency} while improving signal-to-noise and analytical accuracy}
+        \resumeItem{Re-architected the \textbf{EnrichEntity} IOC-enrichment playbook from an agent-with-tools design to deterministic pre-enrichment with AI verdict rendering, structurally enforcing guardrails (CIDR-based private-IP filtering, verdict thresholds) and \textbf{eliminating 700+ failed third-party API calls per day (100\% reduction)}}
+        \resumeItem{Diagnosed and fixed a \textbf{silent production threat-detection gap} where intel-matched malicious IPs wrapped as Host entities were dropped by Sentinel connectors; built an entity-normalization layer that recovered the missed enrichment (validated on a live MISP incident surfacing a Spamhaus DROP-listed IP, risk score 100)}
+        \resumeItem{Restored failing file-hash enrichment by replacing a deprecated vendor with a \textbf{VirusTotal + SQL caching layer} (severity-based TTL, verdict-history tracking), removing per-run failures and redundant API spend; authored reference guides, test plans, and release notes that drove production approvals}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Senior Software Engineer (SDE-III)}{Feb 2025 -- Mar 2026}
+      {Think41}{Bengaluru, Karnataka}
+      \resumeItemListStart
+        \resumeItem{Led development of \textbf{Experience Center}, a voice-first \textbf{AI platform} using \textbf{FastAPI-based voice-pipeline orchestration} and a \textbf{React} frontend, achieving \textbf{60\% engagement boost} and \textbf{99.9\% uptime} across 10K+ user sessions}
+        \resumeItem{Architected real-time voice AI systems with a \textbf{Python backend} integrating Pipecat, STT, LLM, and TTS, plus a service layer connecting \textbf{Deepgram, ElevenLabs, and OpenAI} APIs with React monitoring and control dashboards}
+        \resumeItem{Developed a dynamic \textbf{generative-UI system} that uses AI to render personalized, adaptive interfaces, improving user-experience metrics by \textbf{40\%}}
+        \resumeItem{Mentored a team of \textbf{5+ engineers} across Python AI development and React optimization, achieving \textbf{65\% latency reduction} through performance tuning}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Senior Software Developer}{May 2023 -- Feb 2025}
+      {5paisa Capital Limited}{Mumbai, Maharashtra}
+      \resumeItemListStart
+        \resumeItem{Designed an AI-powered chatbot using \textbf{Python NLP libraries} and a \textbf{React} chat interface, reducing customer-support response time by \textbf{50\%} and handling \textbf{80\%} of queries autonomously}
+        \resumeItem{Built an AI market-sentiment analysis engine using \textbf{Python ML models} with OpenAI APIs and \textbf{React trading dashboards} for real-time insights visualization}
+        \resumeItem{Enhanced WebSocket infrastructure with \textbf{Python backend services} and a \textbf{React microfrontend architecture} for real-time market data, achieving \textbf{zero disconnection issues}}
+        \resumeItem{Developed an AI-driven document-processing system using \textbf{Python-based Tesseract OCR} with a React upload interface, improving processing speed by \textbf{40\%}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+%-----------KEY PROJECTS-----------
+\section{Key Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Cyderes AI Pre-Triage System} $|$ \emph{Azure Logic Apps, Python, JavaScript, LLMs (Gemini, GPT-4.1), Microsoft Sentinel}}{2026}
+          \resumeItemListStart
+            \resumeItem{Production \textbf{multi-agent triage pipeline} that profiles detection sources, enriches entities, and generates analyst-ready case write-ups; engineered \textbf{token-budget optimization} (string interning + deduplication) to minimize LLM cost and latency at SOC scale}
+          \resumeItemListEnd
+          \vspace{-9pt}
+      \resumeProjectHeading
+          {\textbf{Think41 Experience Center} $|$ \emph{Python, React, Voice AI, Pipecat}}{2024}
+          \resumeItemListStart
+            \resumeItem{Production-grade voice-agent infrastructure achieving \textbf{sub-500ms latency}, \textbf{99.9\% uptime}, and \textbf{10K+ concurrent sessions} for enterprise AI experiences}
+          \resumeItemListEnd
+          \vspace{-9pt}
+      \resumeProjectHeading
+          {\textbf{5paisa AI Analytics Platform} $|$ \emph{Python, React, NLP, OpenAI APIs}}{2023}
+          \resumeItemListStart
+            \resumeItem{AI-powered trading platform with \textbf{React dashboard frontend} and live sentiment analysis, reducing support time by \textbf{50\%}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-8pt}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Engineering in Computer Science}{2016 -- 2020}
+      {SJCIT (Visvesvaraya Technological University)}{Bangalore, Karnataka}
+  \resumeSubHeadingListEnd
+\end{document}
